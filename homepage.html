@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>메인 홈페이지</title>
+<style>
+	body { 
+		background-color:#000;
+		color:#fff;
+	}
+	li label{
+		width:170px;
+		font-size:12px;
+		font-weight=bold;
+		color:white;
+		line-height:20px;
+	}
+	fieldset {
+		width:300px;
+		display:inline
+		float:left;
+	}
+	#para3{	text-align:center;}
+</style>
+</head>
+<body> 
+<p id="para3">
+<!--홈페이지 입장 src-->
+	<img src="images/intro_enter.png"
+	alt="입장하기" >
+	
+	<br>
+	</p>
+	
+	<!--CheckID.jsp로 가서 ID 체크함 맞는지 안맞는지-->
+	<form action="checkID.jsp" method="get">
+
+	<ul>
+	<!--로그인 폼-->
+	<div style="text-align:center;">
+			<label for="id">ID : </label><input type="text" name="user_name"><br>
+			<label for="pw">PW : </label><input type="password" name="user_password"><br>
+		
+			<label for="submit"><input type="submit" value="Login"></label>
+</div>
+</ul>
+</form>
+
+	<form action="membership.jsp" method="get">
+
+	<ul>
+	<div style="text-align:center;">
+	<label for="submit"><input type="submit" value="SignUp"></label>
+</div>
+</ul>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+package board;
+
+public class Bulletin
+{
+  String title;
+  String body;
+  String writer;
+  String date;
+
+  public Bulletin(String paramString1, String paramString2, String paramString3, String paramString4)
+  {
+    this.title = paramString1;
+    this.body = paramString2;
+    this.writer = paramString3;
+    this.date = paramString4;
+  }
+
+  public String getBody()
+  {
+    return this.body;
+  }
+
+  public String getTitle() {
+    return this.title;
+  }
+
+  public String getWriter() {
+    return this.writer;
+  }
+
+  public String getDate() {
+    return this.date;
+  }
+}
